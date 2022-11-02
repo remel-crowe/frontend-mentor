@@ -1,0 +1,131 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --vpale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);  
+}
+
+body{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Hat Display';
+    max-width: 1440px;
+    max-height: 1056px;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+.image-box img{
+    border-radius: 20px 20px 0 0;
+}
+
+.main-container{
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 10px 20px gray;
+}
+
+.order{
+    width: 80%;
+    margin: auto;
+}
+.order h1{
+    margin-top: 40px;
+    color: var(--dark-blue);
+}
+.order p{
+    color: var(--desaturated-blue);
+    margin-bottom: 30px;
+}
+    
+.plan{
+    width: 80%;
+    display: grid;
+    grid-auto-flow: column;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+    background-color: var(--vpale-blue);
+    border-radius: 15px;
+    margin-bottom: 15px;  
+}
+.plan .image{
+    margin: auto;
+}
+.plan .text{
+    text-align: left;  
+}
+.plan a:hover {
+    text-decoration: none;
+}
+#header-2{
+    margin-bottom:5px;
+    font-size: 16px ;  
+}
+#price{
+    margin-top:0px;  
+    color: var(--desaturated-blue);
+}
+
+.proceed-btn button{
+    width: 80%;
+    height: 45px;
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 30px var(--desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+}
+
+.proceed-btn button:hover{
+    filter: hue-rotate(10deg);
+    filter: opacity(0.7);
+}
+
+button a{
+    color: var(--vpale-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancel-order{
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+.cancel-order a{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: bold;   
+}
+.cancel-order a:hover{
+    color: black;
+}
+
+.attribution { 
+    margin-top:20px;
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+     color: hsl(256, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+    .main-container{
+        width: 375px;
+    }
+
+    .image-box img{
+        width: 375px;
+    }
+}
